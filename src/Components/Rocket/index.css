@@ -1,0 +1,42 @@
+.rocket-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    position: relative;
+  }
+  
+  .launch-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the bottom */
+    width: 100%; /* Make launch area full width */
+    position: relative; /* Needed for absolute positioning of rocket */
+    height: 500px; /* Set height to control the launch area */
+  }
+  
+  .launch-button {
+    padding: 10px 20px;
+    background-color: #ef233c; /* Bright red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+    margin-right:250px;
+  }
+  
+  .launch-button:hover {
+    background-color: #d90429; /* Darker red on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+  }
+  
+  .rocket-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transition: bottom 0.1s ease; /* Smooth transition for the rocket */
+  }
+  

@@ -1,0 +1,20 @@
+.Home-container {
+    display: flex; /* Use flexbox to arrange child elements in a row */
+}
+
+.container1 {
+    flex: 0 0 55%; /* Set width to 60% */
+    padding: 20px; /* Optional padding */
+}
+
+.container2 {
+    flex: 0 0 40%; /* Set width to 40% */
+    display: flex; /* Use flexbox for centering the image */
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Horizontally center the image */
+}
+
+.container2 img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}

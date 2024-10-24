@@ -1,0 +1,69 @@
+/* RockPaperScissors.css */
+.game {
+    background-color: #ffffff; /* White background for the game */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    padding: 30px;
+    text-align: center;
+    max-width: 400px; /* Limit max width */
+    width: 90%; /* Responsive width */
+    margin: 50px auto; /* Centering the game */
+}
+
+h2 {
+    font-size: 28px; /* Slightly larger font */
+    margin-bottom: 20px;
+    color: #333; /* Dark text */
+}
+
+.choices {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the buttons */
+    gap: 15px; /* Space between buttons */
+    margin-bottom: 20px; /* Space below choices */
+}
+
+.choice-button {
+    padding: 15px 25px; /* Padding for button */
+    font-size: 18px; /* Font size */
+    background: linear-gradient(145deg, #007bff, #0056b3); /* Gradient button */
+    color: white; /* White text on button */
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.4s, transform 0.3s; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+.choice-button:hover {
+    background: linear-gradient(145deg, #0056b3, #007bff); /* Reverse gradient on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.results {
+    margin-top: 20px; /* Space above results */
+    font-size: 20px; /* Font size */
+    color: #333; /* Dark text */
+}
+
+.restart {
+    margin-top: 20px; /* Space above restart button */
+    padding: 12px 20px; /* Padding for button */
+    font-size: 18px; /* Font size */
+    background-color: #28a745; /* Green button */
+    color: white; /* White text on button */
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.4s, transform 0.3s; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+.restart:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.restart:focus {
+    outline: none; /* Remove focus outline */
+}

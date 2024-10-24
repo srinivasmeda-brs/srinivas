@@ -1,0 +1,140 @@
+/* General styling for the login background */
+.login {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #007bff, #ff7043); /* Professional gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* Styling the container for the form */
+.sub-page {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    width: 40%;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+    color: #333;
+}
+
+/* Form elements styling */
+.sub-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.sub-page label {
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.sub-page input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.sub-page input:focus {
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Styling the button */
+.sub-page button {
+    width: 70%;
+    padding: 1rem;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #007bff, #ff7043);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.3s ease;
+}
+
+.sub-page button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 40px rgba(0, 123, 255, 0.5);
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Logo styling */
+.logo {
+    margin: 0 auto 20px;
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styling */
+.sub-page h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+    .sub-page {
+        width: 80%;
+        padding: 2rem;
+    }
+
+    .sub-page h1 {
+        font-size: 2rem;
+    }
+
+    .sub-page input, .sub-page button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sub-page {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .sub-page h1 {
+        font-size: 1.8rem;
+    }
+
+    .sub-page input {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .sub-page button {
+        padding: 0.7rem;
+    }
+}
